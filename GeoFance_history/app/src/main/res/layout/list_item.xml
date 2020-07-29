@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/relativeLayout"
+    android:layout_height="?android:attr/listPreferredItemHeightLarge"
+    android:padding="9dp"
+    android:layout_marginBottom="8dp"
+    android:background="#000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="MINIMUM DWELL TIME BREACH"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/breach"
+        android:textColor="#fff"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the device entered or exited geofence.the state changed from the previous position"
+        android:textColor="#fff"
+        android:layout_below="@+id/breach"
+        android:layout_marginRight="15sp"
+        android:id="@+id/status"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="25-07-2020 12:06:55"
+        android:textSize="10sp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/date_time"
+        android:layout_marginBottom="1dp"
+        android:textColor="#fff"/>
+    <ImageButton
+        android:scaleY="0.9"
+        android:scaleX="0.9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right"
+        android:layout_marginTop="26dp"
+        android:background="#000"
+        android:layout_alignEnd="@+id/date_time"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/next"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>

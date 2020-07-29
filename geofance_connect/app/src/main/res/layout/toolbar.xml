@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000"
+    android:id="@+id/toolbar"
+    app:popupTheme="@style/Theme.AppCompat.Light">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/reload"
+        android:background="#0000"
+        android:id="@+id/reload"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="#fff"
+        android:text="GeoFence"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0.9"
+        android:textSize="24sp"
+        android:gravity="center|center_horizontal"
+        android:id="@+id/geofence"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/history"
+        android:layout_weight="0.1"
+        android:background="#0000"
+        android:id="@+id/history"/>
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
